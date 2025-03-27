@@ -1,0 +1,858 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    }
+    .header-section{
+      cursor: pointer;
+    }
+.nav-items a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0px;
+    letter-spacing: 0.5px;
+} 
+.Logo-1{
+    color: white;
+    cursor: pointer;
+}
+.nav__link__item::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #670cd6d3;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    top: 90%;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.nav__link__item:hover{
+    color: #7308f6d3;
+    transition: 0.2s;
+}
+.nav__link__item:hover::after{
+    width: 100%;
+}
+.nav-items button{
+text-decoration: none;
+ text-transform: uppercase;
+ font-weight: 400;
+ padding: 10px 20px;
+ transition: 0.5s;
+ background: #7a9ffa;
+ color: #e7e7f4;
+ letter-spacing: 0.1em;
+ margin-left: 30px;
+ position: relative;
+ font-size: 15px;
+ cursor: pointer;
+}
+
+
+.nav-items button:hover{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+.nav-items button::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #000000;
+}
+.nav-items button span{
+    position: relative;
+    z-index: 1;
+}
+.content2 h1{
+    color: #fff;
+    padding: 30px 0px 40px 40px ;
+    font-size: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content2 p{
+    color: #fff;
+    padding: 0px 40px 40px ;
+}
+.content2 button{
+    text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 400;
+     padding: 10px 30px;
+     transition: 0.5s;
+     background: #7a9ffa;
+     color: #e7e7f4;
+     letter-spacing: 0.1em;
+     margin-left: 105px;
+     position: relative;
+     font-size: 20px;
+     cursor: pointer;
+    }
+    
+    .content2{ 
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 70%;
+        align-self: start;
+    }
+    .content2 button:hover{
+        background: var(--clr);
+        color: var(--clr);
+        box-shadow: 0 0 35px var(--clr);
+    }
+    .content2 button::before{
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: #000000;
+    }
+    .content2 button span{
+        position: relative;
+        z-index: 1;
+    }
+    
+
+.about, .projects, .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .about h2, .projects h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    opacity: 100%;
+  }
+  
+  .project-card {
+    background:url("VS\ Photos/Carpentry.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 30px;
+    background-position: center;
+    color: #ffffff;
+  }
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);
+  }
+  
+  .project-card1{
+    background:url("VS\ Photos/Electrician.webp");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 30px;
+    background-position: center;
+    color: #ffffff;
+  }
+  .project-card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);
+  }
+  .project-card2{
+    background:url("VS\ Photos/Plumbing.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 30px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 30px; /* Match the card's border radius */
+    z-index: -1; /* Ensure the overlay is above the background */
+  color: #440856; /* Text color */
+  }
+
+  .project-card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(243, 243, 243);
+    color: #000000; /* Change text color on hover */
+  }
+  .project-card3{
+    background:url("VS\ Photos/House Painter.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 23px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);  
+  }
+  .project-card4{
+    background:url("VS\ Photos/Drywall.webp");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 23px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card4:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);  
+  }
+  .project-card5{
+    background:url("VS\ Photos/Masonry.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 30px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card5::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 30px; /* Match the card's border radius */
+    z-index: -1; /* Ensure the overlay is above the background */
+    color: #440856; /* Text color */
+  }
+  .project-card5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252); 
+    color: #000; 
+  }
+  .project-card6{
+    background:url("VS\ Photos/Carpet.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 22px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card6:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);  
+  }
+  .project-card7{
+    background:url("VS\ Photos/Carpentry.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 26px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card7:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);  
+  }
+  .project-card8{
+    background:url("VS\ Photos/Maintance.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 26px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card8::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 30px; /* Match the card's border radius */
+    z-index: -1; /* Ensure the overlay is above the background */
+  }
+    .project-card8:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252); 
+    color: #fff; 
+  }
+  .project-card9{
+    background:url("VS\ Photos/landscaper.jpg");
+    padding: 5rem;
+    margin-left: 12rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 26px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+  }
+  .project-card9:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);  
+  }
+  .project-card10{
+    background:url("VS\ Photos/Weldery.jpg");
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    font-size: 26px;
+    background-position: center;
+    color: #ffffff; /* Text color */
+    margin-left: 12rem;
+  }
+  .project-card10:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(255, 252, 252);  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact button {
+    padding: 0.75rem;
+    background-color: #b616e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background-color: #cabcb7;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .footer a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .projects{
+    background:url("VS\ Photos/Casa.jpeg");
+    width: 100%;
+    height: 150vh;
+    top: 10px;
+    bottom: 100px;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+  }
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+  }
+
+    @media (max-width: 500px) {
+  .nav-items a{
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+      font-size: 10px;
+      font-weight: 500;
+      position: relative;
+      cursor: pointer;
+      padding: 10px 0px;
+      letter-spacing: 0.5px;
+  } 
+  .Logo-1{
+      color: white;
+      cursor: pointer;
+      font-size: 10px;
+      margin-right:50px;
+  }
+  .nav__link__item::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background-color: #670cd6d3;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      top: 90%;
+      transition: all 0.2s;
+      pointer-events: none;
+  }
+  .nav__link__item:hover{
+      color: #7308f6d3;
+      transition: 0.2s;
+  }
+  .nav__link__item:hover::after{
+      width: 100%;
+  }
+  .nav-items button{
+  text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 400;
+   padding: 10px 20px;
+   transition: 0.5s;
+   background: #7a9ffa;
+   color: #e7e7f4;
+   letter-spacing: 0.1em;
+   margin-left: 160px;
+   margin-top: 20px;
+   position: relative;
+   font-size: 10px;
+   cursor: pointer;
+  }
+  
+  
+  .content2 h1{
+      color: #fff;
+      padding: 30px 0px 40px 40px ;
+      font-size: 35px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .content2 p{
+      color: #fff;
+     font-size: 10px;
+      padding: 0px 40px 40px ;
+      margin-top: -40px;
+  }
+  .content2 button{
+      text-decoration: none;
+       text-transform: uppercase;
+       font-weight: 400;
+
+       transition: 0.5s;
+       background: #7a9ffa;
+       color: #e7e7f4;
+       letter-spacing: 0.1em;
+
+       position: relative;
+       font-size: 10px;
+       cursor: pointer;
+      }
+      
+      
+  
+  .about, .projects, .contact {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .about h2, .projects h2, .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    .about p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    
+    .project-card {
+      background:url("VS\ Photos/Carpentry.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);
+    }
+    
+    .project-card1{
+      background:url("VS\ Photos/Electrician.webp");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff;
+    }
+    .project-card1:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);
+    }
+    .project-card2{
+      background:url("VS\ Photos/Plumbing.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card2::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      border-radius: 30px; /* Match the card's border radius */
+      z-index: -1; /* Ensure the overlay is above the background */
+    color: #440856; /* Text color */
+    }
+  
+    .project-card2:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(243, 243, 243);
+      color: #000000; /* Change text color on hover */
+    }
+    .project-card3{
+      background:url("VS\ Photos/House Painter.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card3:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);  
+    }
+    .project-card4{
+      background:url("VS\ Photos/Drywall.webp");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card4:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);  
+    }
+    .project-card5{
+      background:url("VS\ Photos/Masonry.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height:10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card5::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      border-radius: 30px; /* Match the card's border radius */
+      z-index: -1; /* Ensure the overlay is above the background */
+      color: #440856; /* Text color */
+    }
+    .project-card5:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252); 
+      color: #000; 
+    }
+    .project-card6{
+      background:url("VS\ Photos/Carpet.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card6:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);  
+    }
+    .project-card7{
+      background:url("VS\ Photos/Carpentry.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card7:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);  
+    }
+    .project-card8{
+      background:url("VS\ Photos/Maintance.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card8::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      border-radius: 30px; /* Match the card's border radius */
+      z-index: -1; /* Ensure the overlay is above the background */
+    }
+      .project-card8:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252); 
+      color: #fff; 
+    }
+    .project-card9{
+      background:url("VS\ Photos/landscaper.jpg");
+      padding: 5rem;
+      margin-left: 12rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+    }
+    .project-card9:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);  
+    }
+    .project-card10{
+      background:url("VS\ Photos/Weldery.jpg");
+      padding: 5rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.888);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+      background-size: cover;
+      width: 10%;
+      height: 10px;
+      position: relative;
+      font-size: 10px;
+      background-position: center;
+      color: #ffffff; /* Text color */
+      margin-left: 12rem;
+    }
+    .project-card10:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgb(255, 252, 252);  
+    }
+  
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
