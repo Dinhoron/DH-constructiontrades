@@ -856,3 +856,262 @@ text-decoration: none;
         opacity: 1;
     }
   }
+
+
+
+
+
+@media (max-width:300px){
+.Logo-1{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.nav-items a{
+    font-size: 15px;
+    margin-left: 135px;
+
+  }
+  .nav-items button{
+    font-size: 15px;
+    margin-left: 300px;
+  }
+.content2 h1{
+    font-size: 30px;
+}
+.content2 p{
+    font-size: 11px;
+}
+.header-section{
+  padding-bottom: 150px;
+}
+.content2 button{
+    font-size: 15px;
+    left: -2rem;
+
+  }
+.project-card{
+  width: 87%;
+  font-size: 17px;
+ 
+}
+.project-card1{
+  width: 87%;
+  font-size: 17px;
+
+}
+.project-card2{
+  width: 87%;
+  font-size: 17px;
+
+}
+.project-card3{
+  width: 87%;
+  font-size: 17px;
+
+
+
+}
+
+.project-card4{
+  width: 87%;
+  font-size: 17px;
+
+}
+
+.project-card5{
+  width: 87%;
+  font-size: 17px;
+
+}
+
+.project-card6{
+  width: 87%;
+  font-size: 17px;
+
+}
+
+.project-card7{
+  width: 87%;
+  font-size: 17px;
+
+}
+.project-card8{
+  width: 87%;
+  font-size: 17px;
+
+}
+.project-card9{
+  width: 87%;
+  font-size: 17px;
+  left: -12.2rem;
+  
+
+
+}
+.project-card10{
+  width: 87%;
+  font-size: 17px;
+  left: -12.2rem;
+
+}
+.projects{
+  padding-bottom: 2250px;
+}
+}
+@media (max-width:1200px){
+.Logo-1{
+    font-size: 10px;
+    margin-right: 10px;
+}
+.nav-items a{
+    font-size: 10px;
+  ;
+
+  }
+  .nav-items button{
+    font-size: 15px;
+    margin-left: 300px;
+  }
+  .header-section{
+    padding-bottom: 300px;
+  }
+  .project-card9{
+    width: 100%;
+    font-size: 17px;
+    left: -12.2rem;
+  }
+  .project-card10{
+    width: 100%;
+    font-size: 17px;
+    left: -12.2rem;
+  }
+  .projects{
+    padding-bottom: 2350px;
+  }
+}
+
+@media (max-width:600px){
+.Logo-1{
+    font-size: 10px;
+    margin-right: 10px;
+}
+.nav-items a{
+  font-size: 10px;
+} 
+
+.nav-items button{
+  font-size: 15px;
+  left: -15rem;
+  bottom: -30px;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 2rem;
+  }
+  .header-section{
+    cursor: pointer;
+  }
+  .content2 h1{
+    font-size: 30px;
+    padding: 30px 0px 40px 40px ;
+  }
+.header-section{
+  padding-bottom: 10px;
+}
+
+
+}
+@media (max-width:414px){
+  .header-section{
+    padding-bottom: -10px;
+  }
+}
+@media (max-width:430px){
+  .header-section{
+    padding-bottom: -10px;
+  }
+  .Logo-1{
+    font-size: 15px;
+    
+  }
+  .navigation{
+    padding: 10px 0px 10px 0px;
+    margin-left:3rem;
+  }
+  .nav-items button{
+    font-size: 10px;
+  }
+  .projects{
+    margin-top: -30rem;
+  }
+  .content2 h1{
+    font-size: 25px;
+  }
+  .content2 p{
+    font-size: 15px;
+    margin-left: 1rem;
+  }
+  .project-card{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card1{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card2{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card3{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card4{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card5{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+
+  }
+  .project-card6{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card7{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card8{
+    width: 100%;
+    font-size: 15px;
+    left: 0.5rem;
+  }
+  .project-card9{
+    width: 100%;
+    font-size: 15px;
+    left: -11.5rem;
+  }
+  .project-card10{
+    width: 100%;
+    font-size: 15px;
+    left: -11.5rem;
+  }
+  .contact{
+    padding-bottom: 40rem;
+  }
+}
